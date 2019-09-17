@@ -20,8 +20,8 @@ def clipROIs(opsfilename, statfilename, iscellfilename):
     ops = np.load(opsfilename, allow_pickle=True).item()
     stat = np.load(statfilename, allow_pickle=True)
     iscell = np.load(iscellfilename,allow_pickle = True)
-    # stat tupule for cells only
-    stat = stat[iscell[:,0]==1]
+    # stat tuple for cells only
+    # stat = stat[iscell[:,0]==1]
     # load the mean image
     meanImg = ops['meanImg']
 
